@@ -89,7 +89,7 @@ main{
     max-height: 60rem;
 }
 
-main .main-img main section{
+main .main-img, main section{
     
     width: 100%;
     height: 100%;
