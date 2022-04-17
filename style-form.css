@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+}
+body{
+    background-color: rgb(204, 204, 204);
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+}
+
+.page{
+    max-width: 100rem;
+    padding: 2rem 4rem 4rem 4rem;
+    height: 1000px;
+
+    margin: auto;
+    position:relative;
+    top: 15rem;
+}
+
+
+body::after{
+    content: '';
+    height: 20rem;
+    width: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0 0 20px 20px;
+}
+header{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 1rem 1rem;
+    z-index: 99;
+    background-color: black;
+    opacity: 80%;
+ }
+ a{
+    text-decoration: none;
+}
+ .logo{
+    background-image: url(netflix.png);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 10rem;
+    height: 100%;
+    
+}
+.logo:hover{
+    opacity: 100%;
+
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 20rem;
+    margin-right: 2rem;
+    
+
+
+}
+header ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.6rem;
+    color: white;
+}
+header ul li:hover{
+    color: rgb(136, 136, 136);
+    transition: 1s;
+}
+
+.container-header{
+    max-width: 70rem;
+    height: 12rem;
+    margin:auto    
+}
+.header-form{
+    color: aliceblue;
+    height: 12rem;
+    max-width: 30rem;
+   
+    
+}
+
+.header-form h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 1.7rem;
+}
+.header-form p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: aqua;
+    margin-left: 1rem;
+}
+
+form{
+    margin-top: 2rem;
+    max-height: 90rem;
+    max-width: 70rem;
+    gap: 3rem;
+    margin: 2rem auto 0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(204, 204, 204);
+    padding: 2rem;
+}
+
+fieldset{
+    border: none;
+    width: 100%;
+}
+.titulo-conteudo{
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    
+}
+
+    
+
+
+
+form .titulo-conteudo legend{
+    color: rgb(153, 67, 153);
+    border-bottom: rgb(124, 121, 121) solid 3px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    
+}
+
+form .titulo-conteudo .conteudo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form .titulo-conteudo .conteudo label{
+    font-size: 1.5rem;
+    
+}
+
+
+
+
+form .titulo-conteudo .conteudo span{
+    font-size: 1rem;
+    color: rgb(63, 56, 56);
+}
+form .titulo-conteudo .conteudo span:hover{
+    transition: 1s;
+    color: black;
+    cursor: pointer;
+}
+
+form .titulo-conteudo .conteudo input,
+form .titulo-conteudo .conteudo select{
+    max-width: 80%;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 3rem;
+    padding: 0.5rem;
+}
+form .titulo-conteudo .conteudo input:focus,
+form .titulo-conteudo .conteudo select:focus{
+    background-color: azure;
+    
+    outline: 2px rgb(151, 109, 151) solid;
+}
+
+
+form .titulo-conteudo .conteudo select{
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right;
+    border: black 1.5px solid;
+    
+}
+form .titulo-conteudo .conteudo select:hover{
+    background-color: azure;
+    cursor: pointer;
+}
+
+
+
+form .titulo-conteudo .checkbox input{
+    opacity: 0;
+
+}
+form .titulo-conteudo .checkbox label{
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+    display: flex;
+    gap: 1.6rem;
+    
+}
+
+form .titulo-conteudo .checkbox label::before{
+    box-sizing: border-box;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    content: '';
+    display: block;
+
+}
+form .titulo-conteudo .checkbox input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+form .titulo-conteudo .checkbox input:hover + label::before{
+    
+    cursor: pointer;
+}
+form .titulo-conteudo .checkbox input:focus + label::before{
+    outline: 2px rgb(151, 109, 151) solid;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+footer button{
+    border: 0;
+    padding: 0;
+    width: 80%;
+    height: 6rem;
+    border-radius: 8px;
+    outline: 2px black solid;
+    cursor: pointer;
+    background-color: rgb(151, 109, 151) ;
+
+}
+
+footer span{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+footer button:hover{
+    background-color:rgb(87, 36, 87);
+    transition: 1s;
+}
+footer button span:hover{
+    text-transform: uppercase;
+}
+
+@media(max-width:350px){
+    header ul {
+        margin-right: 1rem;
+        width: 17rem;
+    }
+}
+
+@media(min-width:1000px){
+    header ul{
+        width: 30rem;
+        padding-right: 4rem
+
+    }
+    header .logo{
+        margin-left: 3rem;
+        width: 13rem;
+    }
+
+
+}
+@media(max-width:355px){
+    form {
+        margin-top: 3rem;
+    }
+}

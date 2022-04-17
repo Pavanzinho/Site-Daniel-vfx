@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando usuário</title>
+    <link rel="stylesheet" href="style-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Epilogue:wght@400;700;800&family=Oswald:wght@300;400;700&family=Poppins:wght@100&family=Roboto+Mono:wght@200;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="page">
+        <header>
+            <a href="index.html"><div class="logo"></div></a>
+            <ul>
+                <a href=""> <li>Sobre</li></a>
+                
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Portfólio</li></a>
+                
+                
+            </ul>
+        </header>
+        
+        <div class="container-header">  
+            <div class="header-form">
+                <h1>Inscreva-se para se conectar com a gente</h1>
+                <p>Dessa forma recebemos um feedback mais direto seu e nos
+                    comunicamos melhor
+                </p>
+            </div>
+        </div>
+      
+            <form action="">
+            <fieldset>
+                <div class="titulo-conteudo">
+                    <legend>Insira seus dados</legend>
+                    <div class="conteudo">
+                        <label for="name">
+                            Nome completo
+                            <span>(Não se esqueça do sobrenome)</span>
+                        </label>
+                        
+                        <input type="text" name="name" id="name">
+                    </div>
+                   
+                    <div class="conteudo">
+                        <label for="email">
+                            E-mail
+                            <span>(Não se esqueça de "@")</span>
+                        </label>
+                        
+                        <input type="mail" name="email" id="email">
+                    </div>
+                    
+                    <div class="conteudo">
+                        <label for="number">
+                            Número de telefone
+                            <span>(Apenas número)</span>
+                        </label>
+                        
+                        <input type="number" name="number" id="number">
+                    </div>
+
+                    <div class="conteudo">
+                        <label for="select-tecnology">
+                            Seu interesse:
+                        </label>
+                        <select>
+                            <option value="select-vfx">VFX</option>
+                            <option value="select-blender">Blender</option>
+                            <option value="select-edition">Edição</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox-notification" id="checkbox-notification">
+                        <label for="checkbox-notification">
+                            Receber novidades 
+                        </label>
+                        
+                        
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="titulo-conteudo">
+                    <legend>Criar Login</legend>
+                    <div class="conteudo">
+                        <label for="user">
+                            Usuário
+                        </label>
+                        
+                        <input type="text" name="user" id="user">
+                    </div>
+                    
+                    <div class="conteudo">
+                            <label for="password">
+                                Senha
+                            </label>
+                            
+                            <input type="password" name="password" id="password">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="save-user" id="save-user">
+                        <label for="save-user">
+                            Salvar informações 
+                        </label>
+                        
+                    </div>            
+                </div>
+
+            </fieldset>
+
+            <footer>
+                <button>
+                    <span>Criar usuário</span>
+                </button>
+            </footer>
+            
+            
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+</body>
+</html>
