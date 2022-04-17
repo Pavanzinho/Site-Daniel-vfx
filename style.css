@@ -80,7 +80,7 @@ main{
     border-radius: 8px;
 }
 
-main .main-img{
+.main-img{
     background-image: url(vfx.jpg);
     background-repeat: no-repeat;
     background-size: cover;
