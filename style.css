@@ -80,12 +80,13 @@ main{
     border-radius: 8px;
 }
 
-.main-img{
+main .main-img{
     background-image: url(vfx.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 8px 8px 3px 3px ;
+    max-heigth:60rem;
     
 }
 
